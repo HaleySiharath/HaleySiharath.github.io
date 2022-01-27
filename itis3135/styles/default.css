@@ -1,25 +1,42 @@
-<style>
-    body {
-        background-color: #A27035;
-        color: #3C3744;
-        font-family: 'Overpass', sans-serif;
 
-    }
+body {
+    background-color: #A27035;
+    color: #3C3744;
+    font-family: 'Overpass', sans-serif;
 
-    #menu {
-        background-color: #B88B4A;
-        font-family: 'Overpass', sans-serif;
+}
 
-    }
-    
-    footer {
-        background-color: #B88B4A;
-        color: #3C3744;
-        font-family: 'Overpass', sans-serif;
-    }
+#menu {
+    background-color: #B88B4A;
+    font-family: 'Overpass', sans-serif;
 
-    p {
-        color: #FBFFF1;
-    }
+}
 
-</style>
+footer {
+    background-color: #B88B4A;
+    color: #3C3744;
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    color: #FBFFF1;
+    line-height: 20px;
+}
+
+main {
+    color: #FBFFF1;
+}
+
+.intro-image {
+    border-radius: 50%;
+}
+
+    figcaption
+{
+	font-style: italic;
+}
+
+nav
+{
+	text-align: center;
+}
