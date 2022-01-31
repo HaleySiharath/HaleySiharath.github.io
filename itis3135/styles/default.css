@@ -1,42 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap');
 
-body {
-    background-color: #A27035;
-    color: #3C3744;
-    font-family: 'Overpass', sans-serif;
-
+body
+{
+    background-color: #fffffa; 
+    color: #1B130E;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    line-height: 18px;
 }
 
-#menu {
-    background-color: #B88B4A;
-    font-family: 'Overpass', sans-serif;
-
+header
+{
+    margin: -8px;
+    margin-bottom: 5px;
+    padding: 20px;
+    line-height: 35px;
+    background-color: #1B130E;
+    color: #956937;
 }
 
-footer {
-    background-color: #B88B4A;
-    color: #3C3744;
-    font-family: 'Overpass', sans-serif;
+footer
+{
+    padding: 5px;
+    line-height: 12px;
+    margin-bottom: -15px;
 }
 
-p {
-    color: #FBFFF1;
-    line-height: 20px;
+footer div
+{
+    margin-top: 735px;
+    margin-bottom: -15px;
+    padding: 5px;
+    line-height: 12px;
 }
 
-main {
-    color: #FBFFF1;
+h1
+{
+    font-family: 'Spectral', sans-serif;
 }
 
-.intro-image {
+
+main
+{
+    color: #1B130E;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 25px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #4F62BA;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: #956937;
+}
+
+figcaption 
+{
+    font-style: italic;
+    margin-left: 130px;
+}
+
+hr
+{
+    color: #120D31;
+    margin-bottom: 20px;
+}
+
+.circle-image
+{
     border-radius: 50%;
+    border-color: #120D31;
+    border-width: 10px;
+    border-style: solid;
+    text-align: center;
 }
 
-    figcaption
+#left
 {
-	font-style: italic;
+    float: left;
+    width: 50%;
+    z-index: 2;
+    margin-top: -15px;
 }
 
-nav
+#right 
 {
-	text-align: center;
+    float: right;
+    width: 40%;
+    margin-left: 0px;
+    margin-top: 100px;
+    z-index: 1;
 }
