@@ -25,10 +25,206 @@
 
         <main>
             <!--name of current page-->
-            <h2>Home</h2>
+            <h2>HTML Tables</h2>
 
             <!--content of the page-->
-            <p>Welcome to my ITIS 3135 website!</p>
+
+            <h3>My Tublar Data</h3>
+            <!--put employee basic information in ordered list-->
+            <ol>
+                <li><span>Amala Phouthovang</span> (10 years): aphouthovang@siharathconsult.com</li>
+                <li><span>Chloe Siharath</span> (16 years): csiharath@siharathconsult.com</li>
+                <li><span>Chowder Mendez</span> (5 years): cmendez@siharathconsult.com</li>
+                <li><span>Gregory Morris</span> (19 years): gmorris@siharathconsult.com</li>
+                <li><span>Micheal Reeves</span> (3 years): mreeves@siharathconsult.com</li>
+                <li><span>Mone Lee</span> (18 years): mlee@siharathconsult.com</li>
+                <li><span>Natalia Lazo</span> (5years): nlazo@siharathconsult.com</li>
+                <li><span>Sean Coyle</span> (1 year): scoyle@siharathconsult.com</li>
+                <li><span>Xay Lampa</span> (9 years): xlam@siharathconsult.com</li>
+            </ol>
+
+            <h3>Employee Data in Simple Table</h3>
+
+            <!--make a 3x10 table with employees information-->
+            <table>
+                <thead>
+                    <!--row 1: table headers-->
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years Employed</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!--row 2: Amala Phouthavong-->
+                    <tr>
+                        <td>Amala Phouthavong</td>
+                        <td>aphouthovang@siharathconsult.com</td>
+                        <td>10</td>
+                    </tr>
+
+                    <!--row 3: Chole Siharath-->
+                    <tr>
+                        <td>Chole Siharath</td>
+                        <td>csiharath@siharathconsult.com</td>
+                        <td>16</td>
+                    </tr>
+
+                    <!--row 4: Chowder Mendez-->
+                    <tr>
+                        <td>Chowder Mendez</td>
+                        <td>cmendez@siharathconsult.com</td>
+                        <td>5</td>
+                    </tr>
+
+                    <!--row 5: Gregory Morris-->
+                    <tr>
+                        <td>Gregory Morris</td>
+                        <td>gmorris@siharathconsult.com</td>
+                        <td>19</td>
+                    </tr>
+
+                    <!--row 6: Michael Reeves-->
+                    <tr>
+                        <td>Michael Reeves</td>
+                        <td>mreeves@siharathconsult.com</td>
+                        <td>3</td>
+                    </tr>
+
+                    <!--row 7: Mone Lee-->
+                    <tr>
+                        <td>Mone Lee</td>
+                        <td>mlee@siharathconsult.com</td>
+                        <td>18</td>
+                    </tr>
+
+                    <!--row 8: Natalia Lazo-->
+                    <tr>
+                        <td>Natalia Lazo</td>
+                        <td>nlazo@siharathconsult.com</td>
+                        <td>5</td>
+                    </tr>
+
+                    <!--row 9: Sean Coyle-->
+                    <tr>
+                        <td>Sean Coyle</td>
+                        <td>scoyle@siharathconsult.com</td>
+                        <td>1</td>
+                    </tr>
+
+                    <!--row 10: Xay Lampa-->
+                    <tr>
+                        <td>Xay Lampa</td>
+                        <td>xlampa@siharathconsult.com</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Employee Data in Complex Table</h3>
+
+            <!--make a 5x10 table with employees information including salary and department-->
+            <figure>
+                <table style = "width: 1000px;">
+                    <thead>
+                        <!--row 1: table headers-->
+                        <tr>
+                            <th id = "department">Department</th>
+                            <th id = "name">Name</th>
+                            <th id = "email">Email</th>
+                            <th id = "salary">Monthly Salary</th>
+                            <th id = "years employed">Years Employed</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!--row 2: Amala Phouthavong-->
+                        <tr>
+                            <td headers = "department" rowspan = "4">Managers</td>
+                            <td headers = "name">Amala Phouthavong</td>
+                            <td headers = "email">aphouthovang@siharathconsult.com</td>
+                            <td headers = "salary">$12,000</td>
+                            <td headers = "years employed">10</td>
+                        </tr>
+
+                        <!--row 3: Chole Siharath-->
+                        <tr>
+                            <td headers = "name">Chole Siharath</td>
+                            <td headers = "email">csiharath@siharathconsult.com</td>
+                            <td headers = "salary">$11,589</td>
+                            <td headers = "years employed">16</td>
+                        </tr>
+
+                        <!--row 4: Chowder Mendez-->
+                        <tr>
+                            <td headers = "name">Chowder Mendez</td>
+                            <td headers = "email">cmendez@siharathconsult.com</td>
+                            <td headers = "salary">$12,209</td>
+                            <td headers = "years employed">5</td>
+                        </tr>
+
+                        <!--row 5: Gregory Morris-->
+                        <tr>
+                            <td headers = "name">Gregory Morris</td>
+                            <td headers = "email">gmorris@siharathconsult.com</td>
+                            <td headers = "salary">$13,098</td>
+                            <td headers = "years employed">19</td>
+                        </tr>
+
+                        <!--row 6: Michael Reeves-->
+                        <tr>
+                            <td headers = "department" rowspan = "2">Field Experts</td>
+                            <td headers = "name">Michael Reeves</td>
+                            <td headers = "email">mreeves@siharathconsult.com</td>
+                            <td headers = "salary">$7,890</td>
+                            <td headers = "years employed">3</td>
+                        </tr>
+
+                        <!--row 7: Mone Lee-->
+                        <tr>
+                            <td headers = "name">Mone Lee</td>
+                            <td headers = "email">mlee@siharathconsult.com</td>
+                            <td headers = "salary">$8,860</td>
+                            <td headers = "years employed">18</td>
+                        </tr>
+
+                        <!--row 8: Natalia Lazo-->
+                        <tr>
+                            <td headers = "department" rowspan = "3">Number Crunchers</td>
+                            <td headers = "name">Natalia Lazo</td>
+                            <td headers = "email">nlazo@siharathconsult.com</td>
+                            <td headers = "salary">$5,250</td>
+                            <td headers = "years employed">5</td>
+                        </tr>
+
+                        <!--row 9: Sean Coyle-->
+                        <tr>
+                            <td headers = "name">Sean Coyle</td>
+                            <td headers = "email">scoyle@siharathconsult.com</td>
+                            <td headers = "salary">$3,700</td>
+                            <td headers = "years employed">1</td>
+                        </tr>
+
+                        <!--row 10: Xay Lampa-->
+                        <tr>
+                            <td headers = "name">Xay Lampa</td>
+                            <td headers = "email">xlampa@siharathconsult.com</td>
+                            <td headers = "salary">$6,500</td>
+                            <td headers = "years employed">9</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <!--row 11: displays total salary and years employed-->
+                        <tr>
+                            <td colspan = "3">Combined Years of Service</td>
+                            <td headers = "salary">$81,096</td>
+                            <td headers = "years employed">53</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <figcaption>Employee roster information.</figcaption>
+            </figure>
         </main>
 
         <!--imported footer-->

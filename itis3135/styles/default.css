@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap');
 
+
+/* MAIN ELEMENT STYLING (BODY, HEADER, ..., FOOTER)*/
 body
 {
     background-color: #fffffa; 
@@ -8,7 +10,6 @@ body
     font-family: 'Mulish', sans-serif;
     line-height: 18px;
 }
-
 header
 {
     margin: -8px;
@@ -18,14 +19,20 @@ header
     background-color: #1B130E;
     color: #956937;
 }
-
+main
+{
+    color: #1B130E;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    line-height: 25px;
+}
 footer
 {
     padding: 5px;
     line-height: 12px;
     margin-bottom: -15px;
 }
-
 footer div
 {
     margin-top: 855px;
@@ -33,52 +40,103 @@ footer div
     padding: 5px;
     line-height: 12px;
 }
-
 h1
 {
     font-family: 'Spectral', sans-serif;
 }
-
-
-main
+h2
 {
-    color: #1B130E;
-    text-align: left;
-    margin-left: 50px;
-    margin-right: 50px;
-    line-height: 25px;
+    margin-left: -15px;
 }
-
-header a
+h3
 {
-    text-decoration: none;
-    color: #fffffa;
+    margin-top: 20px;
 }
-
-a
-{
-    text-decoration: none;
-    color: #4F62BA;
-}
-
-a:hover
-{
-    text-decoration: underline;
-    color: #956937;
-}
-
-figcaption 
-{
-    font-style: italic;
-    margin-left: 50px;
-}
-
 hr
 {
     color: #120D31;
     margin-bottom: 20px;
 }
 
+
+figcaption 
+{
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* LINK STYLING */
+header a
+{
+    text-decoration: none;
+    color: #fffffa;
+}
+a
+{
+    text-decoration: none;
+    color: #4F62BA;
+}
+a:hover
+{
+    text-decoration: underline;
+    color: #956937;
+}
+
+
+/* LIST STYLING */
+ol span
+{
+    color: #1b130ec0;
+    font-weight:600;
+}
+
+
+/* TABLE STYLING */
+table
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 800px;
+    border-collapse: collapse;
+    border: 3px solid #956937;
+    color:#fffffa
+}
+th, td
+{
+    border: 2px dotted #956937;
+    line-height: 30px;
+    padding-left: 10px;
+}
+    /* nth-last-child(#) gets the colum # from the right most column */
+table tr td:nth-last-child(1), figure table tr td:nth-last-child(2),
+table th:nth-last-child(1), figure table th:nth-last-child(2)
+{
+    text-align: center;
+}
+table tfoot td
+{
+    text-align: center;
+}
+table thead, table tfoot
+{
+    background-color: #4654a7;
+    border-bottom: 2px solid #956937;
+    border-top: 2px solid #956937
+}
+tbody tr:nth-child(even)
+{
+    background-color: #7B88CC;
+}
+tbody tr:nth-child(odd)
+{
+    background-color: #7b89ccdc;
+}
+
+
+/* USER MADE SELECTORS (ID, CLASS, ETC.) */
 .circle-image
 {
     border-radius: 50%;
@@ -87,7 +145,6 @@ hr
     border-style: solid;
     text-align: center;
 }
-
 #left
 {
     float: left;
@@ -95,7 +152,6 @@ hr
     z-index: 2;
     margin-top: -15px;
 }
-
 #right 
 {
     float: right;
