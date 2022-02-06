@@ -49,6 +49,12 @@ main
     line-height: 25px;
 }
 
+header a
+{
+    text-decoration: none;
+    color: #fffffa;
+}
+
 a
 {
     text-decoration: none;

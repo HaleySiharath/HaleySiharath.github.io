@@ -20,17 +20,8 @@
 
     <body>
 
-        <header>
-            <!--header of every webpage (should be identical)-->
-            <h1>The Hazel Sloths &clubs; ITIS 3135 &clubs; Haley Siharath</h1>
-
-            <!--Link to other pages on the site-->
-            <nav>
-                <a href = "./">Home</a> ||  
-                <a href = "./introduction.html">Introduction</a>  ||  
-                <a href = "./contract.html">Contract</a>
-            </nav>
-        </header>
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
 
         <main>
             <!--name of current page-->
@@ -40,33 +31,9 @@
             <p>Welcome to my ITIS 3135 website!</p>
         </main>
 
-        <footer>
-            <hr> <!--creates a line to section-->
+        <div data-include = "components/footer.html"></div>
 
-            <!--navigation to other websites/profiles-->
-            <nav>
-                <a href = "https://webpages.charlotte.edu/hsiharat/">Charlotte Homepage</a> &clubs;
-                <a href = "https://haleysiharath.github.io/">Github.io</a> &clubs;
-                <a href = "https://github.com/HaleySiharath">Github</a> &clubs;
-                <a href = "https://www.freecodecamp.org/HaleySiharath">Free Code Camp</a> &clubs;
-                <a href = "https://www.codecademy.com/profiles/HaleySiharath">Code Academy</a> &clubs;
-                <a href = "www.linkedin.com/in/haleysiharath">LinkedIn</a>
-            </nav>
-
-            <!--CSS and HTML checker links and icons-->
-            <p style="text-align: center;">
-                <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img src = "./images/button_validation_css.png" alt="css validation button" />
-                </a>
-                
-                <a href = "https://validator.w3.org/check?uri=referer">
-                    <img src = "./images/button_validation_html5.png" alt="html5 validation button"/>
-                </a>
-            </p>
-
-            <p>Strategically designed by <a href = "./siharathconsulting.com/">Siharath Consulting</a> &copy;2022</p>
-
-        </footer>
-
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
     </body>
 </html>
