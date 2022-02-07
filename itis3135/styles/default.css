@@ -136,6 +136,70 @@ tbody tr:nth-child(odd)
 }
 
 
+/* FROM STYLES */
+form
+{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7b89ccdc;
+    line-height: 40px;
+    border: 3px dotted #120D31;
+    border-radius: 10px;
+}
+button
+{
+    width: 150px;
+    text-align: center;
+}
+button[type = "submit"]
+{
+    margin-left: 20px;
+    margin-right: 0px;
+}
+button[type = "reset"]
+{
+    margin-left: 0px;
+}
+.div-buttons
+{
+    width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+select, form select option
+{
+    margin-left: 150px;
+    width: 300px;
+    text-align: center;
+}
+form span
+{
+    color: #a7743b;
+}
+form div
+{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-checkbox
+{
+    width: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 35px;
+}
+form label
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
 /* USER MADE SELECTORS (ID, CLASS, ETC.) */
 .circle-image
 {

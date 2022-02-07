@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--Link to colors: https://coolors.co/4f62ba-120d31-fffffa-956937-1b130e-->
+
+        <!--links the style sheet to this document-->
+        <link href = "styles/default.css" rel= "stylesheet" type = "text/css">
+
+        <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
+            rel="stylesheet"> 
+
+        <!--names the webpage on the tab of window-->
+        <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; HTML From</title>
+    </head>
+
+    <body>
+
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <!--name of current page-->
+            <h2>HTML Form</h2>
+
+            <!--content of the page-->
+            <div>
+                <form action = "#">
+                    <!--required information (text)-->
+                    <label><span>*</span>Name:</label>
+                    <input type = "text" required placeholder = "First Last"/>
+                    <br/>
+
+                    <label><span>*</span>Email:&nbsp;</label>
+                    <input type = "text" required placeholder = "example@gmail.com"/>
+                    <br/>
+
+                    <label><span>*</span>Phone Number:</label>
+                    <input type = "text" required placeholder = "(###)###-####" size = "12"/>
+                    <br/>
+
+                    <!--use select box (drop down menu)-->
+                    <label>What service did you buy?</label>
+                    <br/>
+
+                    <select name = "service_bought">
+                        <option value = "none" selected disabled hidden>Select an Option</option>
+                        <option value = "basketball bouncy house">Basketball Bouncy House</option>
+                        <option value = "princess bouncy house">Princess Bouncy House</option>
+                        <option value = "ball pit">Ball Pit</option>
+                        <option value = "bozo the clown">Bozo the Clown</option>
+                        <option value = "cotton candy machine">Cotton Candy Machine</option>
+                    </select>
+                    <br/>
+
+                    <!--use radio buttons-->
+                    <label>How would you rate the services provided?</label>
+                    <br/>
+
+                    <div>
+                        <label for = "terrible"> <input name = "satisfication" type = "radio" id = "terrible"/>
+                            Terrible
+                        </label>
+
+                        <label for = "poor"> <input name = "satisfication" type = "radio" id = "poor"/>
+                            Poor
+                        </label>
+
+                        <label for = "average"> <input name = "satisfication" type = "radio" id = "average"/>
+                            Average
+                        </label>
+
+                        <label for = "good"> <input name = "satisfication" type = "radio" id = "good"/>
+                            Good
+                        </label>
+
+                        <label for = "excelent"> <input name = "satisfication" type = "radio" id = "excelent"/>
+                            Excelent
+                        </label>
+                    </div>
+
+                    <!--use checkboxes-->
+                    <label>Please check off the ways we can improve.</label>
+                    <br/>
+
+                    <div class = "div-checkbox">
+                        
+
+                        <label for = "time"> <input name = "improvement" type = "checkbox" id = "time"/>
+                            Decrease set up time
+                        </label>
+                        <br/>
+
+                        <label for = "staff"> <input name = "improvement" type = "checkbox" id = "staff"/>
+                            Increase staffing
+                        </label>
+                        <br/>
+
+                        <label for = "price"> <input name = "improvement" type = "checkbox" id = "price"/>
+                            Change pricing for services
+                        </label>
+                        <br/>
+
+                        <label for = "variety"> <input name = "improvement" type = "checkbox" id = "variety"/>
+                            Have more variety of services
+                        </label>
+                        <br/>
+
+                        <label for = "cleanup"> <input name = "improvement" type = "checkbox" id = "cleanup"/>
+                            Provide clean up service for additional charge
+                        </label>
+                        <br/>
+
+                        <label for = "payment"> <input name = "improvement" type = "checkbox" id = "payment"/>
+                            Take more forms of payment
+                        </label>
+                        <br/>
+                    </div>
+
+                    <!--use button-->
+                    <div class = "div-buttons">
+                        <button type = "reset">Reset</button>
+                        <button type = "submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!--imported footer-->
+        <div data-include = "components/footer.html"></div>
+
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>
