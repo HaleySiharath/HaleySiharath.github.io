@@ -32,6 +32,7 @@ footer
     padding: 5px;
     line-height: 12px;
     margin-bottom: -15px;
+    margin-top: 10px;
 }
 footer div
 {
@@ -47,25 +48,29 @@ h1
 h2
 {
     margin-left: -15px;
+    color: #1B130E;
 }
 h3
 {
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #1b130ee0;
 }
 hr
 {
     color: #120D31;
     margin-bottom: 20px;
 }
-
-
 figcaption 
 {
     font-style: italic;
     text-align: center;
 }
-
+p span
+{
+    color: #1b130ec0;
+    font-weight: 600;
+}
 
 /* LINK STYLING */
 header a
@@ -83,7 +88,6 @@ a:hover
     text-decoration: underline;
     color: #956937;
 }
-
 
 /* LIST STYLING */
 ol span
@@ -175,6 +179,7 @@ select, form select option
     margin-left: 150px;
     width: 300px;
     text-align: center;
+    color: grey;
 }
 form span
 {
@@ -206,23 +211,32 @@ form label
 .circle-image
 {
     border-radius: 50%;
-    border-color: #120D31;
+    border-color: #4F62BA;
     border-width: 10px;
     border-style: solid;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-#left
+
+.flex-container
 {
-    float: left;
-    width: 50%;
-    z-index: 2;
-    margin-top: -15px;
-}
-#right 
-{
-    float: right;
-    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    margin-top: 0px;
     margin-left: 0px;
-    margin-top: 150px;
-    z-index: 1;
+}
+.box1
+{
+    border-right: 2px dotted #956937;
+    margin-top: 0px;
+    padding-right: 20px;
+}
+.box2
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
