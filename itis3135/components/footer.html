@@ -11,17 +11,21 @@
         <a href = "www.linkedin.com/in/haleysiharath">LinkedIn</a>
     </nav>
 
-    <!--CSS and HTML checker links and icons-->
-    <p style="text-align: center;">
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src = "./images/button_validation_css.png" alt="css validation button" />
-        </a>
-        
-        <a href = "https://validator.w3.org/check?uri=referer">
-            <img src = "./images/button_validation_html5.png" alt="html5 validation button"/>
-        </a>
-    </p>
-
     <p>Strategically designed by <a href = "./siharathconsulting.com/">Siharath Consulting</a> &copy;2022</p>
 
+    <!--CSS and HTML checker links and icons-->
+    <p style="text-align: center;">
+        <a href = "https://validator.w3.org/check?uri=referer" id = "validation_link_html">
+            <img src = "./images/button_validation_html5.png" alt="html5 validation button"/>
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css">
+            <img src = "./images/button_validation_css.png" alt="css validation button" />
+        </a>
+        <script>
+            document.getElementById("validation_link_html")
+                .setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css")
+                .setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </p>
 </footer>

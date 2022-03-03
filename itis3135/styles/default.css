@@ -85,6 +85,10 @@ a:hover
     text-decoration: underline;
     color: #956937;
 }
+footer p a:hover
+{
+    text-decoration: none;
+}
 
 /* LIST STYLING */
 ol span, p span, ul span

@@ -6,8 +6,51 @@
         <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
-            rel="stylesheet"> 
+
+        <!--Colors: https://coolors.co/ff6b35-f7c59f-efefd0-004e89-1a659e-->
+
+        <style>
+            body
+            {
+                background-color: #EFEFD0;
+            }
+            header
+            {
+                background-color: #1A659E;
+                text-align: center;
+                color: #F7C59F;
+                margin-top: 0%;
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+            header h3
+            {
+                color: #FF6B35;
+            }
+            div
+            {
+                border: 1px, solid, #004E89;
+            }
+            h1, h2, h3, ul
+            {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            h2
+            {
+                margin-left: 15px;
+            }
+            p
+            {
+                margin-left: 20px;
+            }
+            ul
+            {
+                margin-left: 20px;
+                list-style: circle;
+            }
+
+        </style>
 
         <!--names the webpage on the tab of window-->
         <title>Siharath Consulting</title>
@@ -16,45 +59,50 @@
     <body>
 
         <header>
-            <h1>Siharath Consulting</h1>
-			<h2>"Taking a Bite With Each Step."</h2>
+            <h1><img src = "#" alt = "Siharath Consulting Logo">Siharath Consulting</h1>
+			<h3>"Taking a Bite With Each Step."</h3>
 
         </header>
 
         <main>
             <!--name of current page-->
-            <h2>Home</h2>
+            <h2>Siharath Consulting's Services</h2>
 
             <!--content of the page-->
-            <p>Welcome to my buisness page!</p>
+            <p>
+                We focus on creating innovative websites that not only draw in customers, but also has them comming back for more.
+                Working with trained psychologist, designers, and developers, your website is gauranteed to be a show stopper.
+            </p>
+
+            <div>
+                <p>
+                    Just to prove that Siharath Consulting is the best web consulting firm in the streets, we have compiled
+                    five amazing facts about us.
+                </p>
+
+                <ul>
+                    <li>
+                        Worked with Pete Davidson
+                    </li>
+                    <li>
+                        Company started by a 19 year old
+                    </li>
+                    <li>
+                        Every Wendsday all employees eat an Oreo at 3:00 pm
+                    </li>
+                    <li>
+                        Designed JC Penny's webpage
+                    </li>
+                    <li>
+                        Won best consulting firm in the world 5 years straight
+                    </li>
+                </ul>
+            </div>
+
         </main>
 
         <footer>
-            <hr> <!--creates a line to section-->
-
-            <!--navigation to other websites/profiles-->
-            <nav>
-                <a href = "https://webpages.charlotte.edu/hsiharat/">Charlotte Homepage</a> &clubs;
-                <a href = "https://haleysiharath.github.io/">Github.io</a> &clubs;
-                <a href = "https://github.com/HaleySiharath">Github</a> &clubs;
-                <a href = "https://www.freecodecamp.org/HaleySiharath">Free Code Camp</a> &clubs;
-                <a href = "https://www.codecademy.com/profiles/HaleySiharath">Code Academy</a> &clubs;
-                <a href = "www.linkedin.com/in/haleysiharath">LinkedIn</a>
-            </nav>
-
-            <!--CSS and HTML checker links and icons-->
-            <p style="text-align: center;">
-                <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img src = "./images/button_validation_css.png" alt="css validation button" />
-                </a>
-                
-                <a href = "https://validator.w3.org/check?uri=referer">
-                    <img src = "./images/button_validation_html5.png" alt="html5 validation button"/>
-                </a>
-            </p>
-
-            <p>"Taking a Bite With Each Step."</a> &copy;2022</p>
-
+            <p>&copy;2022</p>
         </footer>
 
     </body>
