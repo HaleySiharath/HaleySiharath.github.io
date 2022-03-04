@@ -15,13 +15,14 @@
 
     <!--CSS and HTML checker links and icons-->
     <p style="text-align: center;">
-        <a href id = "validation_link_html">
+        <a href = " " id = "validation_link_html">
             <img src = "./images/button_validation_html5.png" alt="html5 validation button"/>
         </a>
 
-        <a href id = "validation_link_css">
+        <a href = " " id = "validation_link_css">
             <img src = "./images/button_validation_css.png" alt="css validation button" />
         </a>
+        <!--The script is dynamicaly changing the validation link-->
         <script>
             document.getElementById("validation_link_html")
                 .setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
