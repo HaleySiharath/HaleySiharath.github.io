@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--Link to colors: https://coolors.co/4f62ba-120d31-fffffa-956937-1b130e-->
+
+        <!--links the style sheet to this document-->
+        <link href = "styles/default.css" rel= "stylesheet" type = "text/css">
+
+        <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
+            rel="stylesheet">
+
+        <script src = "scripts/include.js"></script>
+        <script src = "scripts/defaultscripts.js"></script>
+        <!--names the webpage on the tab of window-->
+        <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; Name the Poloygon</title>
+    </head>
+
+    <body>
+        
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <!--name of current page-->
+            <h2>Name the Poloygon</h2>
+
+            <!--content of the page-->
+            <p>
+                As a member of the Hazel's Snuggle, Mr. Hazel Sloth would be honored for you to click the button 
+                and enter a number from 1 to 10 into the alert!
+            </p>
+            <button type = "button" onclick = "getShape()">Start the game!</button>
+
+        </main>
+
+        <!--imported footer-->
+        <div data-include = "components/footer.html"></div>
+
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>

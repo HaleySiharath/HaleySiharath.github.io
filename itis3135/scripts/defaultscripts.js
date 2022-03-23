@@ -214,3 +214,42 @@ function getTaxTotalCost()
 
     return 'The tax amount on the price provided is $' + tax + '. The total cost including tax is $' + totalCost + '.';
 }
+
+// ACTIVITY 6 - NAME THE POLOYGON
+const poloygons = [
+                    'circle',
+                    'angle',
+                    'triangle',
+                    'square',
+                    'pentagon',
+                    'hexagon',
+                    'heptagon',
+                    'oktogon',
+                    'enneagon',
+                    'dekagon'
+];
+
+function getShape()
+{
+    let shapeNumberInput = prompt('The Hazle Sloth snuggle would be delighted if you entered a number from 1 to 10');
+    let outputText = validateEntry(shapeNumberInput);
+
+    alert(outputText);
+    return;
+}
+
+function validateEntry(userInput)
+{
+    if(userInput === "")
+    {
+        return 'Please enter something... anything.';
+    }
+    else if(isNaN(userInput) || userInput > 10 || userInput < 1)
+    {
+        return 'Thats not the correct input, silly! Try agian.'
+    }
+    else
+    {
+        return 'The shape is ' + poloygons[userInput - 1] + '. LETS GO!'
+    }
+}
