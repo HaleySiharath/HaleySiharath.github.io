@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--Link to colors: https://coolors.co/4f62ba-120d31-fffffa-956937-1b130e-->
+
+        <!--links the style sheet to this document-->
+        <link href = "styles/default.css" rel= "stylesheet" type = "text/css">
+
+        <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
+            rel="stylesheet">
+
+        <script src = "scripts/include.js"></script>
+        <script src = "scripts/defaultscripts.js"></script>
+        <!--names the webpage on the tab of window-->
+        <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; First Scripts</title>
+    </head>
+
+    <body>
+        
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <!--name of current page-->
+            <h2>First Scripts</h2>
+
+            <!--content of the page-->
+            <p>
+                To showcase my knowledge of javascript, the Hazel Sloths have implemented a couple of awesome
+                features! Want to know the time, have a personal greeting, or even get some valuable information
+                about the Hazel Sloths? Well luckily we have it all, please go ahead and explore.
+            </p>
+
+            <!--use javascript to display the current date and time to user-->
+            <h3>What time is it?</h3>
+            <h4 id = "dateOutputArea">Time goes here</h4>
+            <script>displayTimeMessage();</script>
+
+            <!--create a form and display user input out using javascript-->
+            <h3>How are you today?</h3>
+            <form>
+                <label for = "name">First Name: </label>
+                <input type = "text" id = "name" name = "name" placeholder = "ie. Steve">
+
+                <label for = "mood">Current Mood: </label>
+                <input type = "text" id = "mood" name = "mood" placeholder = "ie. happy as ever">
+
+                <button type = "button" onclick = "displayGreetingMessage()">Submit</button>
+            </form>
+
+            <p id = "greetingsMessageOutputArea">C'mon fill out the form... you know you want to.</p>
+
+            <!--5 different buttons that call five different functions-->
+            <h3>What other cool things can we do?</h3>
+            <div>
+
+                
+                <!--function 1. Display a message from Hazel Sloth-->
+                <form>
+                    <button type = "button" class = "div-buttons single-buttons" onclick = "displayHazelSlothMessage()">Hazel Sloth Says...</button>
+                </form>
+
+
+                <!--function 2. Display an image of the mascot-->
+                <form>
+                    <button type = "button" class = "div-buttons single-buttons" onclick = "displayHazelSlothImage()">View Mr. Sloth Himself!</button>
+                </form>
+                <div id = "image_placeholder"></div>
+
+                
+                <form>
+                    <!--function 4. Display total cost of selected items-->
+                    <label>Please select which service you would like to buy.</label>
+                    <br/>
+
+                    <div class = "div-checkbox">
+                        <label for = "basketball bouncy house"> <input class = "service_to_buy" type = "checkbox" id = "basketball_bouncy_house"/>
+                            $100/Hour -- Basketball Bouncy House
+                        </label>
+                        <br/>
+
+                        <label for = "princess_bouncy_house"> <input class = "service_to_buy" type = "checkbox" id = "princess_bouncy_house"/>
+                            $100/Hour -- Princess Bouncy House
+                        </label>
+                        <br/>
+
+                        <label for = "ball_pit"> <input class = "service_to_buy" type = "checkbox" id = "ball_pit"/>
+                            $50/Hour -- Ball Pit
+                        </label>
+                        <br/>
+
+                        <label for = "bozo_the_clown"> <input class = "service_to_buy" type = "checkbox" id = "bozo_the_clown"/>
+                            $56/Hour -- Bozo the Clown
+                        </label>
+                        <br/>
+
+                        <label for = "cotton_candy_machine"> <input class = "service_to_buy" type = "checkbox" id = "cotton_candy_machine"/>
+                            $20/Hour -- Cotton Candy Machine
+                        </label>
+                    </div>
+
+                    <button type = "button" onclick = "displayTotalCost()">Total Cost</button>
+                    <br/>
+
+                    <!--function 5. Display the total tax cost-->
+                    <label for = "tota_tax_cost">Enter total cost of purchase to find final price with tax: </label>
+                    <input type = "text" id = "total_tax_cost" name = "total_tax_cost" placeholder = "ie. 256">
+                    <div class = "div-buttons">
+                        <button type = "button" onclick = "displayTaxTotalCost()">Tax Cost</button>
+
+                        <!--function 3. Reset the whole form-->
+                        <button type = "button" onclick = "resetValues()">Reset</button>
+                    </div>
+                </form>
+
+                <!--display areas-->
+                <div id = "totalCostMessageOutputArea"></div>
+                <div id = "totalTaxCostMessageOutputArea"></div>
+
+            </div>
+
+        </main>
+
+        <!--imported footer-->
+        <div data-include = "components/footer.html"></div>
+
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>
