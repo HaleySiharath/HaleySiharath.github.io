@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--Link to colors: https://coolors.co/4f62ba-120d31-fffffa-956937-1b130e-->
+
+        <!--links the style sheet to this document-->
+        <link href = "styles/default.css" rel= "stylesheet" type = "text/css">
+
+        <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
+            rel="stylesheet">
+
+        <script src = "scripts/include.js"></script>
+        <script src = "scripts/calculator.js"></script>
+        <!--names the webpage on the tab of window-->
+        <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; Calculator</title>
+    </head>
+
+    <body>
+        
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <!--name of current page-->
+            <h2>The Snuggle's Calculator</h2>
+
+            <!--content of the page-->
+            <div class = "calculator-container">
+                <div>
+                    <p id = "calculatorDisplayArea">||</p>
+                </div>
+                <div class = "calculator-buttons">
+                    <div><button type = "button" onclick = "displayClickedNumber('7')">7</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('8')">8</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('9')">9</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('/')">/</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('4')">4</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('5')">5</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('6')">6</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('x')">x</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('1')">1</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('2')">2</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('3')">3</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('-')">-</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('0')">0</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('.')">.</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('=')">=</button></div>
+                    <div><button type = "button" onclick = "displayClickedNumber('+')">+</button></div>
+                </div>
+            </div>
+        </main>
+
+        <!--imported footer-->
+        <div data-include = "components/footer.html"></div>
+
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>

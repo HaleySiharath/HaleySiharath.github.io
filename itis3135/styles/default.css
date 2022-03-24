@@ -260,3 +260,21 @@ form label
     margin-top: auto;
     margin-bottom: auto;
 }
+
+/* CALCULATOR DESIGNS */
+.calculator-container
+{
+    /* Tells that the container is going to be represented as a grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #7B88CC;
+}
+
+.calculator-buttons
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #956937;
+}
