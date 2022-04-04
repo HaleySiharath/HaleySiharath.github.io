@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--https://coolors.co/160c28-efcb68-e1efe6-aeb7b3-000411-->
+        <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
+            rel="stylesheet">
+
+        <!--embeded style sheet-->
+        <style>
+            body
+            {
+                background-color: #E1EFE6;
+                text-align: center;
+                font-family: 'Mulish', sans-serif;
+                line-height: 18px;
+                color: #160C28;
+            }
+            nav
+            {
+                background-color: #160C28;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            nav button
+            {
+                display: inline-block;
+                background-color: #160C28;
+                border: 0px double #cccccc;
+                color: #AEB7B3;
+                text-align: center;
+                font-size: 20px;
+                padding: 20px;
+                width: 200px;
+                margin: 5px;
+            }
+            nav button:hover
+            {
+                color: #EFCB68;
+            }
+            p
+            {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                padding-left: 200px;
+                padding-right: 200px;
+                line-height: 25px;
+                text-align: left;
+            }
+            footer p
+            {
+                text-align: center;
+            }
+            footer a
+            {
+                text-decoration: none;
+            }
+
+            footer a:hover
+            {
+                text-decoration: underline;
+            }
+
+            h2
+            {
+                text-align: left;
+                margin-left: 50px;
+            }
+
+            h3
+            {
+                text-align: left;
+                margin-left: 75px;
+            }
+            ul, ol
+            {
+                text-align: left;
+                line-height: 25px;
+                margin-left: 200px;
+            }
+            form
+            {
+                line-height: 25px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                text-align: left;
+                margin-left: 220px;
+            }
+            footer
+            {
+                margin-top: 15px;
+            }
+            h1
+            {
+                color: #000411;
+            }
+
+            figure table
+            {
+                margin: auto;  
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-right: auto;
+                margin-left: auto;
+                width: 800px;
+                border-collapse: collapse;
+                border: 3px solid #956937;  
+                
+            }
+
+            figure table th, figure table td
+            {
+                border: 2px dotted #956937;
+                line-height: 30px;
+                padding-left: 10px;
+            }
+            figure table ul
+            {
+                text-align: left;
+                margin-left: 10px;
+            }
+
+            table
+            { 
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-right: auto;
+                margin-left: auto;
+                width: 800px;
+                border-collapse: collapse;
+            }
+            
+            table td
+            {
+                line-height: 30px;
+                padding-left: 10px;
+            }
+
+        </style>
+
+        <!--names the webpage on the tab of window-->
+        <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; Home</title>
+
+        <!--include script to activate pages-->
+        <script src = "scripts/pageActivate.js"></script>
+
+    </head>
+    <header>
+        <!--link to other pages on the site-->
+        <nav>
+            <button type = "button" id = "home_page_button" onclick = "show('home_page')">Home</button>
+            <button type = "button" id = "about_page_button" onclick = "show('about_page')">About</button>
+            <button type = "button" id = "types_page_button" onclick = "show('types_page')">What</button>
+            <button type = "button" id = "why_page_button" onclick = "show('why_page')">Why</button>
+            <button type = "button" id = "how_page_button" onclick = "show('how_page')">How</button>
+            <button type = "button" id = "where_page_button" onclick = "show('where_page')">Where</button>
+        </nav>
+        
+        <h1>The World of Roller Skating</h1>
+    </header>
+    <body>
+        <div id = "home_page" class="pages">
+            <h2>Home</h2>
+            <p>
+                Welcome! Care to learn about roller skating and why it is the best activity out there? 
+                Luckily for you, you are in the right place.
+                On this site you can learn more about my passion, what feuls it, and some other fun tidbits to 
+                hopefully get you in the rink too.
+            </p>
+            <figure>
+                <img src="images/couple_skating.jpg" alt="Couple roller skating."/>
+                <figcaption>A couple skating in a rink. So cute!</figcaption>
+            </figure>
+        </div>
+
+        <div id = "about_page" class="pages" style = "display:none">
+            <h2>About Me</h2>
+            <p>
+                I have been roller skating since the ripe age of 5 and I will live and die by it. For me, skating serves
+                as a relaxing activty that allows me to clear my mind.
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="images/roller_skates_in_rink.jpg" alt="Roller skates on rink floor."/>
+                    </td>
+                    <td>
+                        <img src="images/women_roller_skate_outside.jpg" alt="Women roller skating outdoors."/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id = "types_page" class="pages" style = "display: none">
+            <h2>Types of Roller Skating</h2>
+            <p>
+                Everyone does not skate the same. It is fair to say that every skater has their own style 
+                of skating. Some common styles is 'style' skating and speed skating. 'Style' skating encompasses
+                a dance like feeling. There is moving and grooving to the beat with tons of spins and backskating involved.
+                As with dancing, different regions have different styles and it translates into the moves you can see in the 
+                rink. On the other hand, speed skating is when a skater skates as fast as they can.
+            </p>
+            <p>
+                Not to limit skating to these two categories, as there are many more, but they are the most common 
+                skating styles seen in the rink. In order to give a better idea of skating, the two most common types 
+                of skates are described below.
+            </p>
+            <h3>Quads</h3>
+            <p>
+                Quads are the typical skate that most think of when they hear roller skating.
+                They are easier to balance in and there are slight variations of the skate that can make it yours.
+                For instance, wheels can be chunky or skinny and the shoes can be high or low tops.
+            </p>
+
+            <figure>
+                <!--image-->
+                <img src = "images/quad_skate.jpg" alt = "Quad skates."/>
+            </figure>
+
+            <p>Common activitis done in quads are the following:</p>
+            <ul>
+                <li>
+                    Roller durby
+                </li>
+                <li>
+                    Style skating
+                </li>
+                <li>
+                    Parkour skating
+                </li>
+            </ul>
+            <h3>Inlines</h3>
+            <p>
+                Inline skates refer to skates that have all of the wheels in one line. Common types
+                of inline skates are roller blades. Inlines have varrying size of wheels and with the 
+                increased size of wheel the faster you are at skating.
+            </p>
+
+            <figure>
+                <!--image-->
+                <img src = "images/inline_skate.jpg" alt = "Inline skates."/>
+            </figure>
+
+        </div>
+
+        <div id = "why_page" class="pages" style = "display: none">
+            <h2>Why Roller Skate</h2>
+            <p>
+                Roller skating offers many health realted benefits! To show how beneficial skating can be, a table 
+                has been compiled to compare different activites andtheir benefits.
+            </p>
+            <figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Activity
+                            </th>
+                            <th>
+                                Calories Burned per Hour
+                            </th>
+                            <th>
+                                Health Benefits
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Roller Skating
+                            </td>
+                            <td>
+                                300 - 600
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Easy on the joints</li>
+                                    <li>Improves balance, agility, and coordination</li>
+                                    <li>Improve endurance</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Basketball
+                            </td>
+                            <td>
+                                630 - 750
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Develop concentration and self-discipline</li>
+                                    <li>Builds up muscle</li>
+                                    <li>Improve endurance</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Swimming
+                            </td>
+                            <td>
+                                430 - 575
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Easy on the joints</li>
+                                    <li>Improve mental health</li>
+                                    <li>Great for older adults</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption>Activities and their correlating data</figcaption>
+            </figure>
+        </div>
+
+        <div id = "how_page" class="pages" style = "display: none">
+            <h2>How to Roller Skate</h2>
+            <p>
+                As with everything, skating takes practice, time, and dedication. There are hundreds of tutorials
+                on the web showing you how to skate, but my best advice is to go out there and try your best.
+                Finding your balance is key and with progress you can begin to focus on different styles of skating.
+            </p>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FhDm056yGqU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>A beginers tutorial to skating.</figcaption>
+            </figure>
+            
+        </div>
+
+        <div id = "where_page" class="pages" style = "display: none">
+            <h2>Where to Buy Your Skates</h2>
+            <p>
+                Searching for a skate that best fits you is a daunting task as skates are not cheap. 
+                In order to get the best quality expierience out of your skates, I reccomend going 
+                through these series of questions/steps.
+            </p>
+            <ol>
+                <li>
+                    Do I want inline or quads?
+                </li>
+                <li>
+                    What is my price range?
+                </li>
+                <li>
+                    Do i prefer hightops or lowtops?
+                </li>
+                <li>
+                    Are my skates intended for indoor or outdoor skating?
+                </li>
+                <li>
+                    Does my local skate shop have roller skates?
+                </li>
+            </ol>
+            <p>
+                These questions should help you narrow down what and where do you want to buy from. My only advice is to 
+                make an investment into these skates. They typically last from 5 to 8 years.
+            </p>
+
+            <p>To sign up for more information please fill out this form.</p>
+            <form action = "#">
+                <!--required information (text)-->
+                <label><span>*</span>Name:</label>
+                <input type = "text" required placeholder = "First Last"/>
+                <br/>
+
+                <label><span>*</span>Email:&nbsp;</label>
+                <input type = "text" required placeholder = "example@gmail.com"/>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <hr> <!--creates a line to section-->
+    
+        <p>Strategically designed by <a href = "/siharathconsulting.com/">Siharath Consulting</a> &copy;2022</p>
+    
+        <!--CSS and HTML checker links and icons-->
+        <p style="text-align: center;">
+            <a href = " " id = "validation_link_html">
+                <img src = "./images/button_validation_html5.png" alt="html5 validation button"/>
+            </a>
+    
+            <a href = " " id = "validation_link_css">
+                <img src = "./images/button_validation_css.png" alt="css validation button"/>
+            </a>
+            <!--The script is dynamicaly changing the validation link-->
+            <script>
+                document.getElementById("validation_link_html")
+                    .setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css")
+                    .setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
+        </p>
+    </footer>
+
+</html>
