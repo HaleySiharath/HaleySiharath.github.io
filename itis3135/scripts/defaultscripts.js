@@ -30,7 +30,6 @@ function displayTimeMessage()
 {
     // call getTimeInformation to get the date output message
     let outputText = getTimeInformation();
-    console.log(outputText);
 
     // intialize the output area and change the content to say the date output message
     let outputArea = document.getElementById('dateOutputArea');

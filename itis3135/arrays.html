@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--Link to colors: https://coolors.co/4f62ba-120d31-fffffa-956937-1b130e-->
+
+        <!--links the style sheet to this document-->
+        <link href = "styles/default.css" rel= "stylesheet" type = "text/css">
+
+        <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
+            rel="stylesheet">
+
+        <script src = "scripts/include.js"></script>
+        <script src = "scripts/arrays.js"></script>
+        <!--names the webpage on the tab of window-->
+        <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; Home</title>
+    </head>
+
+    <body>
+        
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <!--name of current page-->
+            <h2>Arrays</h2>
+
+            <!--content of the page-->
+            <p></p>
+            <form>
+                <label for = "employee_selected"><span>*</span>Select employee:</label>
+                <select id = "employee_selected" required>
+                    <option value = "" selected disabled hidden>Please select an employee</option>
+                    <option value = "Amala Phouthavong">Amala Phouthavong</option>
+                    <option value = "Chole Siharath" >Chole Siharath</option>
+                    <option value = "Chowder Mendez" >Chowder Mendez</option>
+                    <option value = "Gregory Morris" >Gregory Morris</option>
+                    <option value = "Michael Reeves" >Michael Reeves</option>
+                    <option value = "Mone Lee">Mone Lee</option>
+                    <option value = "Natalia Lazo">Natalia Lazo</option>
+                    <option value = "Sean Coyle">Sean Coyle</option>
+                    <option value = "Xay Lampa">Xay Lampa</option>
+                </select>
+
+                <br/>
+
+                <label for = "salary"><span>*</span>Enter the salary:</label>
+                <input type = "text" id = "salary" required/>
+                <table>
+                    <tr>
+                        <td>
+                            <button type = "button" onclick = "addSalary()">Add Salary</button>
+                        </td>
+                        <td>
+                            <button type = "button" onclick = "displayResults()">Display Overview</button>
+                        </td>
+                        <td>
+                            <button type = "button" onclick = "displaySalary()">Display Salary</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <div id = "results"></div>
+            <div id = "results_table_header"></div>
+            <table id = "results_table">
+            </table>
+        </main>
+
+        <!--imported footer-->
+        <div data-include = "components/footer.html"></div>
+
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>

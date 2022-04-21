@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--Link to colors: https://coolors.co/4f62ba-120d31-fffffa-956937-1b130e-->
+
+        <!--links the style sheet to this document-->
+        <link href = "styles/default.css" rel= "stylesheet" type = "text/css">
+
+        <!--importing google font Mulish (sans-serif) and Specteral (serif) || only needed if doing embeded stylesheet-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
+            rel="stylesheet">
+
+        <script src = "scripts/include.js"></script>
+        <script src = "scripts/defaultscripts.js"></script>
+
+        <!--names the webpage on the tab of window-->
+        <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; Project Requirements & Design</title>
+    </head>
+
+    <body>
+        
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <!--name of current page-->
+            <h2>Project Requirements and Design</h2>
+
+            <!--content of the page-->
+            <h3>Overview</h3>
+            <p>
+                The goal of the project is to create an interactive and informational site about 
+                Ford Mustangs. The target audiance is Ford Mustang enthusiasts who want to get all of 
+                their Ford Mustang facts in one place. 
+            </p>
+            <p>
+                The content of the webpage will vary from page to page but most of the site will 
+                contain images, descriptions, and interactive elements to reveal fun Mustang facts! 
+                The goal with the content is to make it interactive, informative, and yet still fun 
+                to go through.
+            </p>
+
+            <h3>Client Information</h3>
+            <p>
+                My lovely client is none other than Seth LaMay. He is a student at UNC Charlotte. He 
+                is a proud owner of a Mustang and was feuled to start this website to connect with others 
+                who have the same passion about their cars! Seth's information is laid out in the table below.
+            </p>
+            <table id = "project_design_requirements_table">
+                <thead>
+                    <tr>
+                        <th>Client Name</th>
+                        <th>Affiliation</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Seth LaMay</td>
+                    <td>UNC Charlotte</td>
+                    <td>slamay1@uncc.edu</td>
+                </tr>
+            </table>
+
+            <h3>Wireframe and Site Map</h3>
+            <!--Insert a slide show to change from image to image-->
+            <table class = "invisible-table">
+                <tr>
+                    <td>
+                        <figure>
+                            <img src = "images/project_wireframe.png" alt = "Wireframe of project website."/>
+                            <figcaption>
+                                Wireframe of project website.
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure>
+                            <img src = "images/project_sitemap.png" alt = "Site map of project website."/>
+                            <figcaption>
+                                Site map of project website.
+                            </figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Page Design</h3>
+
+            <p>
+                The following information will go into brief detail into which each page will contain
+            </p>
+
+            <h4>Home Page</h4>
+            <p class = "sub-content">
+                This serves as the landing page for the website. This page should be intriguing to the user
+                to incentivize them to stay for a while. It also gives the user a basic understanding of 
+                what the site will provide.
+            </p>
+            <p class = "sub-content">
+                The content contained on this page will consist of a brief overview paragraph at the top of the page 
+                followed by a timeline that works from top to bottom displaying text and a picture to coincide with it.
+                The images of the timeline will be sorted on different sides of the page (left to right) in order to make 
+                the overall design more appealing.
+            </p>
+
+            <ul class = "sub-content">
+                <li>Will the page ask for users to enter data? Will they need validated?</li>
+                <li>
+                    <ul>
+                        <li>No</li>
+                    </ul>
+                </li>
+                <li>Will the page contain buttons or hyperlinks or dropdowns?</li>
+                <li>
+                    <ul>
+                        <li>Yes, hyperlinks to other pages</li>
+                    </ul>
+                </li>
+                <li>What actions will happen on the page?</li>
+                <li>
+                    <ul>
+                        <li>Hyperlink to other pages through the use of images and links</li>
+                        <li>Animation of images moving with the scroll feature</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>Generation Content Pages</h4>
+            <p class = "sub-content">
+                There is six generations of Ford Mustangs that will be disscussed throughout the site and 
+                each of these pages contain similar layout. Namely, the content is what will be changing throughout 
+                each page. Therefore, the design of these six pages will follow the following design criteria.
+            </p>
+            <p class = "sub-content">
+                The content on these pages will contain multiple images displayed in a slide show. There will be history facts 
+                sorted throughout the page and basic information on current selling price for a specific model. There will also 
+                be ways to learn more about the vehicles by outsourcing links to other sites with seller/buyer information.
+            </p>
+
+            <ul class = "sub-content">
+                <li>Will the page ask for users to enter data? Will they need validated?</li>
+                <li>
+                    <ul>
+                        <li>No</li>
+                    </ul>
+                </li>
+                <li>Will the page contain buttons or hyperlinks or dropdowns?</li>
+                <li>
+                    <ul>
+                        <li>Yes, the navbar</li>
+                    </ul>
+                </li>
+                <li>What actions will happen on the page?</li>
+                <li>
+                    <ul>
+                        <li>The navbar is included on all these pages but they maintain static</li>
+                    </ul>
+                </li>
+            </ul>
+        
+            <h3>Dynamic Functionality</h3>
+            <p>
+                Due to the nature of the page, there is not much dynamic functionality to the page 
+                aside from a subscribe form and animation of images. The subscription feature 
+                will be a simple form seen on many sites, especially news sites, to have frequent users 
+                get daily updates and content from the site. The animation of images will dynamically change 
+                the page but the coding for it will be executed in CSS.
+            </p>
+        </main>
+
+
+        <!--imported footer-->
+        <div data-include = "components/footer.html"></div>
+
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>
