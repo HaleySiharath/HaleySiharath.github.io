@@ -125,7 +125,7 @@ function displaySalary()
     let outputArea = document.getElementById('results_table');
     let outputHeader = document.getElementById('results_table_header');
 
-    outputHeader.innerHTML = '<h2>Employee and Salary Tabel</h2>';
+    outputHeader.innerHTML = '<h2>Employee and Salary Table</h2>';
 
     // create the head of the table
     outputArea.innerHTML = '<thead><tr><th>Employee</th><th>Salary</th></tr></thead>';

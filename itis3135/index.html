@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
             rel="stylesheet">
 
-        <script src = "scripts/include.js"></script>
+        <script src = "scripts/slideshow.js"></script>
         <script src = "scripts/defaultscripts.js"></script>
         <!--names the webpage on the tab of window-->
         <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; Home</title>
@@ -30,8 +30,22 @@
             <h2>Home</h2>
 
             <!--content of the page-->
-            <p>Welcome to my ITIS 3135 website!</p>
-            <input type="button" value="Result" onclick="scriptTest()"/>  
+            <p>
+                Welcome to my ITIS 3135 website! Please look through our slide show to see what the Hazel
+                Sloths are all about.
+            </p>
+            
+
+            <div class = "slideshow-container">
+                <!--Slide images-->
+                <div class = "slides"></div>
+                <!--Next and previous buttons-->
+                <a class = "previous" onclick = "plusSlides(-1)"><</a>
+                <a class = "next" onclick = "plusSlides(1)">></a>
+            </div>
+
+            <div id = "slide-dots"></div>
+
         </main>
 
         <!--imported footer-->
