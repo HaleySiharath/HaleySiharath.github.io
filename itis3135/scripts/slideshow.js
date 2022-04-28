@@ -1,64 +1,39 @@
-const homePageImages = [
-                        'images/',
-                        'images/'];
+// Reference: https://stackoverflow.com/questions/22116664/jquery-slideshow
 
-const homePageCaptions = [
-                        'caption 1',
-                        'caption 2',];
 
-let slideIndex = 0;
+$(document).ready(function(){                       // once the DOM is ready on page will run script
 
-window.onload = function() 
-{
-    let outputAreaImages = document.getElementById('slides');
-    let outputAreaDots = document.getElementById('slide-dots')
+    let $imgages = $('.slideshow img');             // get images in slideshow class
+    let imageIndex = 0;                             // set index counter to first image
+    let numberImages = $imgages.length;             // number of images
 
-    for(let i = 0; i < homePageImages.length; i++)
-    {
-        outputAreaImages.innerHTML += '<div class = "mySlides">';
-        outputAreaImages.innerHTML += '<div class = "numbertext">' + (i+1) + '/' + homePageImages.length + '</div>';
-        outputAreaImages.innerHTML += '<img src = ' + homePageImages[i] + ' style = "width: 100%" alt = "' + homePageCaptions[i] + '"/>';
-        outputAreaImages.innerHTML += '<div class = "caption">' + homePageCaptions[i] + '</div>';
-        outputAreaImages.innerHTML += '</div>';
+    $imgages.eq(imageIndex).siblings().hide();      // hide all images other than the first
 
-        outputAreaDots.innerHTML  += '<span class = "dot" onclick = "currentSlide(' + (i+1) + ')"></span>';
-    }
+    // when the previous object is clicked change slides
+    $('.previous').click(function(){
 
-    showSlides(slideIndex);
-}
+        if(imageIndex <= 0)                         // if already on index 0 do nothing
+        {
+            return;
+        }
+        else                                        // decrease index and fade to that image
+        {
+            imageIndex -= 1;
+            $imgages.fadeTo(1000,0).eq(imageIndex).stop(1).fadeTo(0,1000).eq(imageIndex);
+        }
+    });
 
-function plusSlides(index)
-{
-    showSlides(slideIndex += index);
-}
+    // when the next object is clicked change slides
+    $('.next').click(function(){
 
-function showSlides(slideIndex)
-{
-    let slides = document.getElementsByClassName('mySlides');
-    let dots = document.getElementsByClassName('dot');
-
-    // if the slide is above number of slides go back to index 0
-    if(slideIndex > slides.length)
-    {
-        slideIndex = 0;
-    }
-    // if slide is below 0 then go to last image in array
-    if(slideIndex < 0)
-    {
-        slideIndex = slides.length;
-    }
-
-    for(let i = 0; i < slides.length; i++)
-    {
-        slides[i].style.display = "none";
-    }
-
-    for(let i = 0; i < dots.length; i++)
-    {
-        dots[i].className = dots[i].classList.replace(" active", "")
-    }
-
-    slides[slideIndex].style.display = "block";
-    dots[slideIndex].className += " active";
-
-}
+        if(imageIndex >= numberImages - 1)          // if already on last index do nothing
+        {
+            return;
+        }
+        else                                        // increase index and fade to that image
+        {
+            imageIndex += 1;
+            $imgages.fadeTo(1000,0).eq(imageIndex).stop(1).fadeTo(1,1000).eq(imageIndex);
+        }
+    });
+});

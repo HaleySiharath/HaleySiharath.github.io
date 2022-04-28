@@ -14,8 +14,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Spectral:wght@300&display=swap" 
             rel="stylesheet">
 
+        <!--scripts used within the page-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--imports JQuery-->
         <script src = "scripts/slideshow.js"></script>
-        <script src = "scripts/defaultscripts.js"></script>
+
         <!--names the webpage on the tab of window-->
         <title>Haley Siharath the Hazel Sloth &clubs; ITIS 3135 &clubs; Home</title>
     </head>
@@ -31,20 +33,33 @@
 
             <!--content of the page-->
             <p>
-                Welcome to my ITIS 3135 website! Please look through our slide show to see what the Hazel
+                Welcome to my ITIS 3135 website! In this course we were tasked with creating a company 
+                that provides a service and completing various assignments to make the companies website. 
+                This site represents my skill set in HTML, CSS, and javascript.
+            </p>
+
+            <p>
+                The Hazel Sloths is a company that provides birthday party serivices. From bouncy houses to 
+                cotton candy machienes, we have them all! Please look through our slide show to see what the Hazel
                 Sloths are all about.
             </p>
             
 
-            <div class = "slideshow-container">
-                <!--Slide images-->
-                <div class = "slides"></div>
-                <!--Next and previous buttons-->
-                <a class = "previous" onclick = "plusSlides(-1)"><</a>
-                <a class = "next" onclick = "plusSlides(1)">></a>
+            <div class="slideshow">
+                <img src = "images/sloth_in_tree_resized.jpg" alt = "Mr. Sloth hanging out" />
+                <img src = "images/inside_bouncyhouse_resized.jpg" alt = "Inside of a bouncy house" />
+                <img src = "images/outside_bouncyhouse_resized.jpg" alt = "Bouncyhouse in a field of flowers" />
+                <img src = "images/ball_pit_resized.jpg" alt = "Ball pit bouncy house" />
+                <img src = "images/clowns_resized.jpg" alt = "Bozo and Frank the clown" />
+                <img src = "images/water_slide_resized.jpg" alt = "Water silde" />
             </div>
-
-            <div id = "slide-dots"></div>
+    
+            <div class = "flex-container-slideshow">
+                <div></div>
+                <div class="previous"><</div>
+                <div class="next">></div>
+                <div></div>
+            </div>
 
         </main>
 
