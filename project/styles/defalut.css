@@ -1,0 +1,442 @@
+/* https://coolors.co/001427-c9c19f-f8fcee-3a5743-8d0801 */
+
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Mulish:wght@300&family=Nunito:wght@200;400;600&family=Oleo+Script+Swash+Caps&family=Roboto:wght@300;400;500&family=Spectral:wght@300&display=swap');
+
+html
+{
+    background-color: black;
+}
+main
+{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 245px;
+    margin-right: 70px;
+    padding: 15px;
+}
+
+header div
+{
+    background-color: white;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-top: -20px;
+
+
+    /* Fixed positon of company name at top*/
+    position: sticky;
+    width: fit-content;
+    left: 37%;
+    border-radius: 0% 0% 100% 100%/ 0% 0% 75% 75%;
+}
+
+header ul
+{
+    background-color: white;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+
+    position: fixed;
+    left: 0;
+    top: 20%;
+    border-radius: 0% 5px 5px 0%;
+}
+
+header li a
+{
+    font-family: 'Nunito', sans-serif;
+    
+    display: block;
+
+    color: black;
+
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+header li img
+{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    border-bottom: 1px solid black;
+}
+
+header li a:hover 
+{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    border-radius: 0% 5px 5px 0%;
+}
+
+header li a img:hover 
+{
+    border-bottom: 1px solid white;
+}
+
+.backgroundImage
+{
+    height: 700px;
+    margin-left: -275px;
+    margin-right: -90px;
+    margin-top: -125px;
+    padding-bottom: 70px;
+
+    border-bottom: 2px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-container-slideshow
+{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+    color: black;
+}
+
+.previous
+{
+    background-color: rgba(255, 255, 255, 0.734);
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.previous:hover
+{
+    background-color: rgba(128, 128, 128, 0.678);
+}
+
+.next
+{
+    background-color: rgba(255, 255, 255, 0.734);
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.next:hover
+{
+    background-color: rgba(128, 128, 128, 0.678);
+}
+
+
+h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+p
+{
+    font-size: large;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 30px; 
+}
+
+h3
+{
+    padding-left: 30px; 
+}
+
+
+/* FORM ITEMS */
+form
+{
+    width: 800px;
+    height: 600px;
+    background-color: black;
+
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    margin-top: 21px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 5px;
+    border: 30px solid rgb(19, 19, 243);
+}
+
+form div
+{
+    width: 700px;
+    height: 350px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.734);
+
+}
+
+form label
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.checkboxes-div
+{
+    height:fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 0px;
+    margin-left: 15px;
+    margin-top: -35px;
+    margin-bottom: 10px;
+
+    border: 0px;
+}
+
+input[type = "text"], input[type = "email"]
+{
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    padding: 5px;
+    border-radius: 0px;
+    border: white;
+}
+
+input[type = "email"]
+{
+    margin-left: 8px;
+}
+
+input[type = "submit"]
+{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 0px;
+    border: 2px solid white;
+    font-size: medium;
+}
+
+textarea
+{
+    width: 600px;
+    height: 100px;
+
+    max-width: 600px;
+    max-height: 100px;
+
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 5px;
+
+    border: white;
+    border-radius: 0px;
+}
+
+.textarea-div
+{
+    height:fit-content;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    border: 0px;
+}
+
+.limit_count
+{
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 0px;
+    margin-left: 55px;
+    font-size: small;
+
+}
+
+table
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.collage
+{
+    padding: 10px;
+    height: 625px;
+    width: fit-content;
+    text-align: center;
+}
+
+.collage img
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    border: 3px solid white;
+    max-height: 300px;
+    max-width: 400px;
+    
+}
+
+#overview_section
+{
+    border-top: 2px solid white;
+    margin-left: -275px;
+    margin-right: -90px;
+    padding-left: 260px;
+    padding-right: 85px;
+}
+
+#overview_section h2
+{
+    text-align: right;
+}
+
+
+.ui-widget-header
+{
+    border-radius: 0;
+}
+
+.ui-widget-content
+{
+    color: white;
+    background-color: black;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+
+.ui-widget
+{
+    width: 570px;
+    margin-left: 30px;
+    border-radius: 0;
+}
+
+.ui-tabs.ui-widget-content
+{
+    border: 2px solid white;
+}
+
+.tabs h3
+{
+    font-size: larger;
+    margin-left: 0px;
+    padding-left: 0;
+}
+.tabs ul
+{
+    margin-left: 5px;
+}
+
+.flex-container-factoids
+{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+}
+
+.flex-container-factoids div
+{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.flex-container-factoids div p
+{
+    margin: 0;
+    padding: 0;
+    margin-top: 25%;
+}
+
+
+footer
+{
+    margin-left: -275px;
+    margin-right: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    margin-top: 20px;
+    color: white;
+
+    border-top: 2px solid white;
+}
+
+footer p 
+{
+    padding-left: 0;
+    margin-left: 47%;
+}
+footer p a img
+{
+    padding-left: 40px;
+    margin-right: 60%;
+}
+
+footer a
+{
+
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+h6
+{
+    line-height: 0%;
+    height: 0;
+}

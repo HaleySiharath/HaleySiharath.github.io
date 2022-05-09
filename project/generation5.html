@@ -5,10 +5,27 @@
 
         <!--links the style sheet to this document-->
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Mulish:wght@300&family=Nunito:wght@200;400;600&family=Oleo+Script+Swash+Caps&family=Roboto:wght@300;400;500&family=Spectral:wght@300&display=swap" rel="stylesheet"> 
+
+        <link href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" rel = "stylesheet">
+        <link href="styles/defalut.css" rel= "stylesheet" type = "text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src = "scripts/jquery.collagePlus.min.js"></script>
+        <script src = "scripts/input_limit.js"></script>
+        <script src = "scripts/default.js"></script>
+        <script src ="scripts/slideshow.js"></script>
+
         <script src = "scripts/include.js"></script>
-        <script src = "scripts/defaultscripts.js"></script>
+        <script src = "components/header.html"></script>
         <!--names the webpage on the tab of window-->
-        <title>Ford Mustang</title>
+        <title>Mustang Feens || Generation 5</title>
     </head>
 
     <body>
@@ -18,10 +35,44 @@
 
         <main>
             <!--name of current page-->
+        
             <h2>Generation 5</h2>
 
-            <!--content of the page-->
-            <p>Welcome to Generation 5 Ford Mustang Site!</p>
+            <table>
+                <tr>
+                    <td>
+                        <img src = "images/gen5car1_resized.jpg" alt = "2011 Ford Mustang">
+                    </td>
+                    <td>
+                        <img src = "images/gen5car2_resized.jpg" alt = "2006 Ford Mustang">
+                    </td>
+                    <td>
+                        <img src = "images/gen5car3_resized.jpg" alt = "2006 Ford Mustang">
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                The fifth generation began in 2005 and ended in 2014. This generation resembled the styling of the first-generation Mustang. The five-speed manual 
+                transmission remained the standard for the series with the option of a fice-speed automatic transmission. The 2010 model featured a redeisgned exteriror with sequential LED taillights.            </p>
+            <p>
+                The Shelby GT500, designed by Carroll Shelby, had a 5.4-liter suercharged V8 block enginer and an output of 500-horsepower. In 2011, the engines and transmission options 
+                were revised with the introduction of a six-speed manual and automatic transmission. In 2012, the Mustang Boss 302 emerged and in 2013 an update was made to teh Shelby Mustang GT500. The update 
+                included a larger 5.8-liter supercharged V8 engine producing 662-horsepower.
+            </p>
+
+            <div class="flex-container-factoids">
+                <div>
+                    <p>Shelby Mustang GT500 became the first Mustang to produce over 600-horsepower</p>
+                </div>
+                <div>
+                    <p>2010 redesigned exterior reduced drag coefficient on base and GT models</p>
+                </div>
+                <div>
+                    <p>2011 replaced hydraulic steering with electric power steering</p>
+                </div>
+            </div>
+
         </main>
 
         <!--imported footer-->

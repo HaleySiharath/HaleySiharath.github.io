@@ -5,10 +5,27 @@
 
         <!--links the style sheet to this document-->
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Mulish:wght@300&family=Nunito:wght@200;400;600&family=Oleo+Script+Swash+Caps&family=Roboto:wght@300;400;500&family=Spectral:wght@300&display=swap" rel="stylesheet"> 
+
+        <link href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" rel = "stylesheet">
+        <link href="styles/defalut.css" rel= "stylesheet" type = "text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src = "scripts/jquery.collagePlus.min.js"></script>
+        <script src = "scripts/input_limit.js"></script>
+        <script src = "scripts/default.js"></script>
+        <script src ="scripts/slideshow.js"></script>
+
         <script src = "scripts/include.js"></script>
         <script src = "components/header.html"></script>
         <!--names the webpage on the tab of window-->
-        <title>Ford Mustang</title>
+        <title>Mustang Feens</title>
     </head>
 
     <body>
@@ -17,12 +34,155 @@
         <div data-include = "components/header.html"></div>
 
         <main>
-            <!--name of current page-->
-            <h2>Home</h2>
+            <!--home section that holds slide show-->
+            <section id="home_section">
+                <!-- Where the slide show is placed and additional items such as left and right arrows-->
+                <div class="backgroundImage">
+                    &nbsp;
 
-            <!--content of the page-->
-            <p>Welcome to my Ford Mustang Site!</p>
-            <p></p>
+                    <div class="flex-container-slideshow">
+                        <div class="previous">&lt;</div>
+                        <div class="next">></div>
+                    </div>
+                </div>
+                <!-- to pass html validation -->
+                <h6>&nbsp;</h6>
+            </section>
+
+            <!-- section about why and puprose of Mustang Feens -->
+            <section id="about_section">
+
+                <!-- To layout header and infromation enxt to eachother -->
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Mustang Feens Humble Beginnings</h2>
+                        </td>
+                        <td>
+                            <p>
+                                Calling all car fenatics, but specifically those of the Mustang variety. You have reached 
+                                Mustang heaven!
+                            </p>
+                            <p>
+                                Mustang Feens was founded by Seth Lamay in 2022. Lamay has always been a Ford Mustang "feen" but after the 
+                                restoration of his 2006 Ford Mustang GT, he truly fell in love. His passion inspired him to create the Mustang Feens 
+                                site as he wants to share his passion with other Mustang lovers! 
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Dynamically input these images with CollagePlus -->
+                <div class = "collage">
+                    <img src="images/sethcar8.png" alt="Seth's car in Charlotte" />
+                    <img src="images/sethcar5.jpg" alt="Seth's car on street" />
+                    <img src="images/sethcar4.jpg" alt="Seth's car on street" />
+                    <img src="images/300sethcar10.png" alt="Seth's car after remodeling" />
+                    <img src="images/sethcar7.png" alt="Seth's car before remodeling" />
+                </div>
+
+            </section>
+
+            <!-- Section to have history overview of Mustangs -->
+            <section id="overview_section">
+
+                <!-- Tabs on the left and header on the right -->
+                <table>
+                    <tr>
+                        <td>
+                            <!-- Tabs of different information about Mustanges -->
+                            <div class="tabs">
+                                <ul>
+                                    <li><a href = "#mustang-overview">Overview</a></li>
+                                    <li><a href = "#mustang-founders">Founder</a></li>
+                                    <li><a href = "#mustang-generations">Generations</a></li>
+                                </ul>
+    
+                                <!-- tab about mustangs as a whole -->
+                                <div id="mustang-overview">
+                                    <h3>
+                                        Ford Mustang Overview
+                                    </h3>
+                                    <p>
+                                        The Ford Mustang was first on the market on April 17, 1964 at the price of $2,368. The car was instanly a hit with over 20,000 Mustangs being ordered on the first day alone. After being featured on the track 
+                                        for the 1964 Indianapolis 500, the popularity of Mustangs only grew. Over the years, the sporty coupe became the "it" car as it was increasingly being featured on 
+                                        films, commerical advertisements, and posters.
+                                    </p>
+                                    <p>
+                                        A large apeal to the Mustang is not only it's sleek style or it's performance abilities but the fact that it is an American made car. Overtime, mustangs have gone over 
+                                        an array of changes from generation to generation. Wether it be changes to the engine, such as in the sixth generation, or a redesign of the body, like the thrid generation.
+                                    </p>
+                                </div>
+                                
+                                <!-- tab about mustangs founder -->
+                                <div id="mustang-founders">
+                                    <h3>
+                                        Ford Mustang's Founders
+                                    </h3>
+                                    <p>
+                                        The original team for the Ford Mustang consisted of executive stylist John Najjar, Ford stylist Philip T. Clark, and Ford Division market research 
+                                        manager Robert J. Eggert. Although these people had many teams working on the creation of Mustang, their work is to be appriceated for what the Mustang has become today.
+                                    </p>
+
+                                </div>
+                                
+                                <!-- tab about different mustang generations -->
+                                <div id="mustang-generations">
+                                    <h3>
+                                        Ford Mustang's by Generation
+                                    </h3>
+
+                                    <ul>
+                                        <li>Generation 1
+                                            <p>
+                                                The first generation began in 1965 and ended in 1973. The orignial Mustang was derived from the 1960 Ford Falcon compact. It was made public at the New York World's Fair. 
+                                                The intial model included a two body style car that came in either a hardtop or convertible. Newer models in 1969 changes the body design and introduced new trim and performance packages.
+                                            </p>
+                                        </li>
+                                        <li>Generation 2
+                                            <p>
+                                                The second generation began in 1974 and ended in 1978. This generation introudced the "Pintostang" which was smaller and more fuel-efficent. The 
+                                                1978 model year changed from the fuel-efficient Mustang gerneation 2 with the flashy Cobra II and King Cobra Mustang.
+                                            </p>
+                                        </li>
+                                        <li>Generation 3
+                                            <p>
+                                                The third generation began in 1979 and ended in 1993. It introduced the Fox Body Mustang which was a redesign of the previous generation. 
+                                                The Fox Body Mustang kept the traditional long hood and shor rear deck but added European-style design. This included rectangular headlights and more cargo space.
+                                            </p>
+                                        </li>
+                                        <li>Generation 4
+                                            <p>
+                                                The fourth generation began in 1994 and ended in 2004. This generation marked the 30th anniversary of the Original Mustang. 
+                                                To commemeroate the anniversary, Ford introduced a new lineup of models that resembled the first gerneration. In 2015, the Mustang 
+                                                faced a complete redesign that was based on the Fox platform.
+                                            </p>
+                                        </li>
+                                        <li>Generation 5
+                                            <p>
+                                                The fifth generation began in 2005 and ended in 2014. This generation resembled the styling of the first-generation Mustang. The five-speed manual 
+                                                transmission remained the standard for the series with the option of a fice-speed automatic transmission. The 2010 model featured a redeisgned exteriror with sequential LED taillights.
+                                            </p>
+                                        </li>
+                                        <li>Generation 6
+                                            <p>
+                                                The sixth generation began in 2015 and is ongoing till today. These models fearure an 2.3-liter EcoBoost four-cylinder enginge and a rear suspension system. Changes include 
+                                                a wider body, inceased passenger space, a new grille, and new exterior colors.
+                                            </p>
+                                        </li>
+
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </td>
+                        <td>
+                            <h2>Ford Mustang Crash Course</h2>
+                        </td>
+                    </tr>
+                </table>
+
+            </section>
         </main>
 
         <!--imported footer-->

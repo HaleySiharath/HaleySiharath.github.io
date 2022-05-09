@@ -5,10 +5,27 @@
 
         <!--links the style sheet to this document-->
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Mulish:wght@300&family=Nunito:wght@200;400;600&family=Oleo+Script+Swash+Caps&family=Roboto:wght@300;400;500&family=Spectral:wght@300&display=swap" rel="stylesheet"> 
+
+        <link href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" rel = "stylesheet">
+        <link href="styles/defalut.css" rel= "stylesheet" type = "text/css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src = "scripts/jquery.collagePlus.min.js"></script>
+        <script src = "scripts/input_limit.js"></script>
+        <script src = "scripts/default.js"></script>
+        <script src ="scripts/slideshow.js"></script>
+
         <script src = "scripts/include.js"></script>
-        <script src = "scripts/defaultscripts.js"></script>
+        <script src = "components/header.html"></script>
         <!--names the webpage on the tab of window-->
-        <title>Ford Mustang</title>
+        <title>Mustang Feens || Generation 1</title>
     </head>
 
     <body>
@@ -18,10 +35,46 @@
 
         <main>
             <!--name of current page-->
+        
             <h2>Generation 1</h2>
 
-            <!--content of the page-->
-            <p>Welcome to Generation 1 Ford Mustang Site!</p>
+            <!-- Images of generation's Mustangs -->
+            <table>
+                <tr>
+                    <td>
+                        <img src = "images/gen1car1.jpg" alt = "1971 Ford Mustang">
+                    </td>
+                    <td>
+                        <img src = "images/gen1car3_resized.jpg" alt = "1973 Ford Mustang">
+                    </td>
+                    <td>
+                        <img src = "images/gen1car2_resized.jpg" alt = "1969 Ford Mustang">
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Infromation about mustang -->
+            <p>
+                The first generation began in 1965 and ended in 1973. The orignial Mustang was derived from the 1960 Ford Falcon compact. It was made public at the New York World's Fair. 
+                The intial model included a two body style car that came in either a hardtop or convertible. Newer models in 1969 changes the body design and introduced new trim and performance packages.            </p>
+            <p>
+                The first generation Mustang consisted of a 2.8-liter straight-siz engine and a 4.3-liter V8 enginer with 164-horsepower. These engines were upgraded before the 
+                traditional opening of the new model year. The 1967 model year had a changed Fastback body style and the 1968 version was made to appear in the Steven McQueens famous move.
+            </p>
+
+            <!-- Factoid section (3 small circles for a little fact) -->
+            <div class="flex-container-factoids">
+                <div>
+                    <p>1969 and 1970 introduced are the original "Pony Cars"</p>
+                </div>
+                <div>
+                    <p>Ford discontinued Ford Mustang GT options until 1982</p>
+                </div>
+                <div>
+                    <p>Production started five months prior to normal start</p>
+                </div>
+            </div>
+
         </main>
 
         <!--imported footer-->

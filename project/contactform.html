@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8"/>
+
+        <!--links the style sheet to this document-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Mulish:wght@300&family=Nunito:wght@200;400;600&family=Oleo+Script+Swash+Caps&family=Spectral:wght@300&display=swap" rel="stylesheet"> 
+
+        <link href="styles/defalut.css" rel= "stylesheet" type = "text/css">
+
+        <!--JQuery plugin: limit amount of characters inputed into textarea-->
+        <!-- https://www.jqueryscript.net/form/character-input-limit.html -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="scripts/input_limit.js"></script>
+
+
+        <script src = "scripts/include.js"></script>
+        <script src = "components/header.html"></script>
+        <!--names the webpage on the tab of window-->
+        <title>Mustang Feens || Contact Form</title>
+    </head>
+
+    <body>
+        
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <form action="#">
+                <h2>Contact Us</h2>
+                <p>
+                    We would love to hear from you! Please send us your 
+                    information and we can send you our weekly news letters, updates,
+                    and current ongoing Mustang steals.
+                </p>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" />
+                    <br />
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" />
+                    <br />
+
+                    <div class= "textarea-div">
+                        <label for="message">Message/Comment:</label>
+                        <textarea name = "message" id = "message" class="limit"></textarea>
+                        <!-- Character Counter -->
+                        <p class="limit_count">(0 / 400)</p>
+                    </div>
+
+                    <div class = "checkboxes-div">
+                        <input type="checkbox" name="subscribe" id="subscribed" value="subscribed"/>
+                        <label for="subscribed">Subscribe to the free weekly email from Mustang Feens</label>
+                    </div>
+
+
+                    <input type="submit" value="Submit us your input">
+                </div>
+            </form>
+        </main>
+
+        <!--imported footer-->
+        <div data-include = "components/footer.html"></div>
+
+        <!--javascript file used to implment header and footer-->
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>
